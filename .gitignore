@@ -1,3 +1,4 @@
+.idea
 *.abcl
 *.fasl
 *.dx32fsl

@@ -1,15 +1,15 @@
 ;;;; Top comment with 4 semicolons with explanation of file purpose. Line length 80-100.
 
 (in-package :cl-user)
-(defpackage first-app/style
+(defpackage cl-start-project/style
   (:use :cl))
   #|Avoid :use. Instead, do this:
   (:use :cl)
-  (:import-from :first-app/foo :hello-world)
-  (:import-from ::first-app/lesson show-math))
+  (:import-from :cl-start-project/foo :hello-world)
+  (:import-from ::cl-start-project/lesson show-math))
   Use :import-from
   |#
-(in-package :first-app/style)
+(in-package :cl-start-project/style)
 
 ;;; Max line length --------------------------------------------------------------------------------
 

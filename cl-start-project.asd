@@ -1,6 +1,6 @@
 ; Main system definition
-(defsystem "first-app"
-  :version "0.1.0"
+(defsystem "cl-start-project"
+  :version "0.0.0"
   :author "Imre Tabur <info@setmy.info>"
   :maintainer "Imre Tabur <info@setmy.info>"
   :homepage "https://setmy-info.github.io/src/site/markdown/lisp.html"
@@ -15,16 +15,16 @@
                   (:file "main" :depends-on ("style" "lesson" "foo"))
                 )))
   :description "A sample Lisp system(project)."
-  :in-order-to ((test-op (test-op "first-app/tests"))))
+  :in-order-to ((test-op (test-op "cl-start-project/tests"))))
 
 ; Testing system definition
-(defsystem "first-app/tests"
+(defsystem "cl-start-project/tests"
   :author "imret"
   :license "MIT"
-  :depends-on ("first-app"
+  :depends-on ("cl-start-project"
                "rove")
   :components ((:module "tests"
                 :components
                 ((:file "main"))))
-  :description "Test system for first-app"
+  :description "Test system for cl-start-project"
   :perform (test-op (op c) (symbol-call :rove :run c)))

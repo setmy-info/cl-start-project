@@ -1,10 +1,10 @@
 ;;;; Collected code lessons and examples.
 
 (in-package :cl-user)
-(defpackage first-app/lesson
+(defpackage cl-start-project/lesson
   (:use :cl)
   (:export :show-math))
-(in-package :first-app/lesson)
+(in-package :cl-start-project/lesson)
 
 (defun println (str)
   "Print line"

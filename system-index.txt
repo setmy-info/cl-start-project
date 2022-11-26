@@ -1,1 +1,1 @@
-first-app.asd
+cl-start-project.asd

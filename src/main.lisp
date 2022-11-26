@@ -1,13 +1,13 @@
 ;;;; Application main execution file.
 
 (in-package :cl-user)
-(defpackage first-app/main
+(defpackage cl-start-project/main
   (:use :cl)
-  (:import-from :first-app/foo :hello-world)
-  (:import-from :first-app/style :+golden-ratio+)
-  (:import-from :first-app/lesson :show-math)
+  (:import-from :cl-start-project/foo :hello-world)
+  (:import-from :cl-start-project/style :+golden-ratio+)
+  (:import-from :cl-start-project/lesson :show-math)
   (:export :show-math))
-(in-package :first-app/main)
+(in-package :cl-start-project/main)
 
 (format t "~%ASDF version: ~a ~1%" (asdf:asdf-version))
 
