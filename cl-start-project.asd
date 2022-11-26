@@ -14,6 +14,9 @@
                   (:file "style")
                   (:file "main" :depends-on ("style" "lesson" "foo"))
                 )))
+  :build-operation "program-op" ;; leave as is
+  :build-pathname "cl-start-project.bin"
+  :entry-point "cl-start-project:hello-world"
   :description "A sample Lisp system(project)."
   :in-order-to ((test-op (test-op "cl-start-project/tests"))))
 
