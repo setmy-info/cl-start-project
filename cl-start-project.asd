@@ -16,7 +16,7 @@
                 )))
   :build-operation "program-op" ;; leave as is
   :build-pathname "cl-start-project.bin"
-  :entry-point "cl-start-project:hello-world"
+  :entry-point "cl-start-project/main:main-fun"
   :description "A sample Lisp system(project)."
   :in-order-to ((test-op (test-op "cl-start-project/tests"))))
 
