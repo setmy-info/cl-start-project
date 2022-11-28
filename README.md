@@ -19,6 +19,21 @@
 sbcl
 ```
 
+```clojure
+(require "asdf")
+(asdf:already-loaded-systems)
+;; quicklisp should be installed
+(load "quicklisp.lisp")
+(asdf:already-loaded-systems)
+(ql:add-to-init-file)
+(asdf:already-loaded-systems)
+(quit)
+```
+
+```sh
+sbcl
+```
+
 Building with testing part
 
 ```clojure

@@ -9,3 +9,5 @@
 *~
 .#*
 *.exe
+*.bin
+system-index.txt
