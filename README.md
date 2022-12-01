@@ -13,14 +13,33 @@
 
 ## Usage, tips and tricks
 
-### Exec
+### Setup
+
+```sh
+mkdir ~/common-lisp
+cd ~/common-lisp
+curl -O https://beta.quicklisp.org/quicklisp.lisp
+curl -O https://beta.quicklisp.org/quicklisp.lisp.asc
+gpg --verify quicklisp.lisp.asc quicklisp.lisp
+sbcl --load quicklisp.lisp
+```
+
+```clojure
+(require "asdf")
+; if sbcl without --load quicklisp.lisp
+; (load "quicklisp.lisp")
+(asdf:already-loaded-systems)
+(quicklisp-quickstart:install)
+(asdf:already-loaded-systems)
+(ql:add-to-init-file); Hit enter
+(quit)
+```
 
 ```sh
 sbcl
 ```
 
 ```clojure
-(require "asdf")
 (asdf:already-loaded-systems)
 ;; quicklisp should be installed
 (load "quicklisp.lisp")
@@ -29,6 +48,8 @@ sbcl
 (asdf:already-loaded-systems)
 (quit)
 ```
+
+### Execution
 
 ```sh
 sbcl
@@ -40,6 +61,8 @@ Building with testing part
 ; Load main system
 (asdf:already-loaded-systems)
 (pushnew (truename "./") ql:*local-project-directories*)
+(ql:register-local-projects)
+; Or
 ;(require "cl-start-project")
 (ql:quickload :cl-start-project)
 (asdf:already-loaded-systems)
