@@ -2,4 +2,4 @@
 
 sbcl --load src/loader.lisp
 
-return ${?}
+exit ${?}

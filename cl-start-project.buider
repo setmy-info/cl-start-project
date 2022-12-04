@@ -2,4 +2,4 @@
 
 sbcl --load src/builder.lisp
 
-return ${?}
+exit ${?}

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sbcl --load src/ws-loader.lisp
+
+exit ${?}
