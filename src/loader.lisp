@@ -4,5 +4,5 @@
 (ql:register-local-projects)
 (ql:quickload :cl-start-project)
 
-(cl-start-project/main:main-fun)
+(cl-start-project/main:main)
 (quit)

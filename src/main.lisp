@@ -7,12 +7,12 @@
   (:import-from :cl-start-project/style :+golden-ratio+)
   (:import-from :cl-start-project/lesson :show-math)
   ;(:export :show-math)
-  (:export :main-fun))
+  (:export :main))
 (in-package :cl-start-project/main)
 
 (format t "~%ASDF version: ~a ~1%" (asdf:asdf-version))
 
-(defun main-fun ()
+(defun main ()
   (hello-world)
   (show-math)
   (format t "Finish~%"))

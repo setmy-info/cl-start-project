@@ -7,5 +7,5 @@
 (ql:register-local-projects)
 (ql:quickload :cl-ws-start-project)
 
-(cl-ws-start-project/ws-main:main-fun)
+(cl-ws-start-project/ws-main:main)
 ;(quit)
