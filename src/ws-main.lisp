@@ -15,4 +15,11 @@
     (setf (hunchentoot:content-type*) "text/plain")
     (format nil "Hey~@[ ~A~]!" name))
 
+  (defun hello ()
+    (format nil "Hello, it works!"))
+
+  (push
+    (hunchentoot:create-prefix-dispatcher "/hello.html" 'hello) 
+    hunchentoot:*dispatch-table*)
+
   (hunchentoot:start *acceptor*))
