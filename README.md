@@ -85,6 +85,12 @@ Building with testing part
 1. Search and replace in all files **cl-start-project** with new project (system) marker.
 2. Rename files **cl-start-project.asd**, **cl-start-project.cmd** and **cl-start-project** with project related names.
 
+```clojure
+(ql:where-is-system "hunchentoot")
+```
+
+/home/has/quicklisp/dists/quicklisp/software/hunchentoot-v1.3.0/
+
 ## See also
 
 [LISP know how](https://setmy-info.github.io/src/site/markdown/lisp.html)
