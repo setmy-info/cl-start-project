@@ -15,39 +15,7 @@
 
 ### Setup
 
-```sh
-mkdir ~/common-lisp
-cd ~/common-lisp
-curl -O https://beta.quicklisp.org/quicklisp.lisp
-curl -O https://beta.quicklisp.org/quicklisp.lisp.asc
-gpg --verify quicklisp.lisp.asc quicklisp.lisp
-sbcl --load quicklisp.lisp
-```
-
-```clojure
-(require "asdf")
-; if sbcl without --load quicklisp.lisp
-; (load "quicklisp.lisp")
-(asdf:already-loaded-systems)
-(quicklisp-quickstart:install)
-(asdf:already-loaded-systems)
-(ql:add-to-init-file); Hit enter
-(quit)
-```
-
-```sh
-sbcl
-```
-
-```clojure
-(asdf:already-loaded-systems)
-;; quicklisp should be installed
-(load "quicklisp.lisp")
-(asdf:already-loaded-systems)
-(ql:add-to-init-file)
-(asdf:already-loaded-systems)
-(quit)
-```
+Have to download, install and load quicklisp into SBCL - in (LISP quide)[https://setmy-info.github.io/src/site/markdown/lisp.html].
 
 ### Execution
 
