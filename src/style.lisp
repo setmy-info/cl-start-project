@@ -11,6 +11,8 @@
   |#
 (in-package :cl-start-project/style)
 
+;; naming - "-" is used as a word delimiter.
+
 ;;; Max line length --------------------------------------------------------------------------------
 
 (defparameter *global-variable* "Global variable in earmuffs. All variables should be writen 

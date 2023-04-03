@@ -1,2 +1,2 @@
 @echo off
-sbcl --load src\builder.lisp
+call sbcl --load src\builder.lisp

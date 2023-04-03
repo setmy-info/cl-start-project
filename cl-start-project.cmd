@@ -1,2 +1,2 @@
 @echo off
-sbcl --load src\loader.lisp
+call sbcl --load src\loader.lisp
