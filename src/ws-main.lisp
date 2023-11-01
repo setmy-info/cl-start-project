@@ -11,10 +11,12 @@
   (defvar *acceptor*)
   (setq *acceptor* (make-instance 'hunchentoot:easy-acceptor :port 4242))
 
+  ;; http://localhost:4242/yo?name=Imre
   (hunchentoot:define-easy-handler (say-yo :uri "/yo") (name)
     (setf (hunchentoot:content-type*) "text/plain")
     (format nil "Hey~@[ ~A~]!" name))
 
+  ;; http://localhost:4242/hello.html
   (defun hello ()
     (format nil "Hello, it works!"))
 
